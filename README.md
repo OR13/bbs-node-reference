@@ -1,5 +1,17 @@
 # BBS Reference Implementation
 
+This is a fork of a work in progress, see the upstream for latest details:
+
+- https://github.com/microsoft/bbs-node-reference
+
+[![CI](https://github.com/or13/bbs-node-reference/actions/workflows/ci.yml/badge.svg)](https://github.com/or13/bbs-node-reference/actions/workflows/ci.yml)
+![Branches](./badges/coverage-branches.svg)
+![Functions](./badges/coverage-functions.svg)
+![Lines](./badges/coverage-lines.svg)
+![Statements](./badges/coverage-statements.svg)
+![Jest coverage](./badges/coverage-jest%20coverage.svg)
+
+
 *WORK IN PROGRESS*
 
 TypeScript reference implementation for the [BBS signature scheme](https://github.com/decentralized-identity/bbs-signature). The goal is to help understand and verify the specification. This is NOT a production-ready implementation; testing is minimal and no effort is made to optimize and protect against specialized attacks (e.g., side-channel resistance). 

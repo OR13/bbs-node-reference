@@ -1,15 +1,27 @@
 {
-  "name": "bbs-node-reference",
-  "version": "0.1.0",
+  "name": "@or13/bbs-node-reference",
+  "version": "0.0.0",
   "description": "BBS node reference implementation",
-  "main": "src/index.ts",
-  "scripts": {
-    "fetch-fixtures": "./fetch-test-vectors.sh",
-    "build": "npm run fetch-fixtures && tsc",
-    "bbs": "ts-node --files src/index.ts",
-    "test": "npm run fetch-fixtures && jest --verbose"
+  "main": "./dist/src/index.js",
+  "typings": "dist/src/index.d.ts",
+  "publishConfig": {
+    "access": "public"
   },
-  "author": "Christian Paquin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/or13/bbs-node-reference.git"
+  },
+  "bugs": {
+    "url": "https://github.com/or13/bbs-node-reference/issues"
+  },
+  "homepage": "https://github.com/or13/bbs-node-reference#readme",
+  "scripts": {
+    "build": "tsc -b",
+    "pretest":"./fetch-test-vectors.sh",
+    "test": "jest --verbose",
+    "coverage": "jest --ci --coverage"
+  },
+  "contributors": ["Christian Paquin", "Orie Steele"],
   "license": "MIT",
   "dependencies": {
     "@noble/bls12-381": "^1.4.0",
