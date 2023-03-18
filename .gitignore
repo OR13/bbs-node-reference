@@ -2,7 +2,7 @@
 node_modules/
 
 # compiled js files
-js/*
+dist/*
 
 # fixture files (retrieved by script)
 fixtures/*
