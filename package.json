@@ -7,10 +7,19 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/or13/bbs-node-reference.git"
+  },
+  "bugs": {
+    "url": "https://github.com/or13/bbs-node-reference/issues"
+  },
+  "homepage": "https://github.com/or13/bbs-node-reference#readme",
   "scripts": {
     "build": "tsc -b",
     "pretest":"./fetch-test-vectors.sh",
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "coverage": "jest --ci --coverage"
   },
   "contributors": ["Christian Paquin", "Orie Steele"],
   "license": "MIT",
