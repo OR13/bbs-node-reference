@@ -11,6 +11,9 @@ This is a fork of a work in progress, see the upstream for latest details:
 ![Statements](./badges/coverage-statements.svg)
 ![Jest coverage](./badges/coverage-jest%20coverage.svg)
 
+```sh
+npm i @or13/bbs-node-reference@0.0.0 --save
+```
 
 *WORK IN PROGRESS*
 
