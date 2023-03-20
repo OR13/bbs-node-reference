@@ -24,7 +24,7 @@ jobs:
       run: git merge origin/main
 
     - name: Push badges branch
-      run: git push -u origin/badges
+      run: git push -u origin badges
 
     - name: Install
       run: npm ci
