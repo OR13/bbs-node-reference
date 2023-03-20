@@ -19,6 +19,7 @@
     "build": "tsc -b",
     "pretest":"./fetch-test-vectors.sh",
     "test": "jest --verbose",
+    "precoverage":"./fetch-test-vectors.sh",
     "coverage": "jest --ci --coverage"
   },
   "contributors": ["Christian Paquin", "Orie Steele"],
