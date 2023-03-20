@@ -9,6 +9,12 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+    - name: Checkout badges branch
+      run: git switch badges
+    - name: Rebase badges on main
+      run: git merge origin/main
+    - name: Push badges branch
+      run: git push origin badges
     - name: Install
       run: npm ci
     - name: Coverage
@@ -16,4 +22,4 @@ jobs:
     - name: Badges
       uses: jpb06/jest-badges-action@latest
       with:
-        branches: main
+        branches: badges
