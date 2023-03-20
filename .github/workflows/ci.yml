@@ -12,11 +12,11 @@ jobs:
       with:
         fetch-depth: 0
     - name: Checkout badges branch
-      run: git checkout origin badges
-    - name: Rebase badges on develop
+      run: git checkout origin/badges
+    - name: Rebase badges on main
       run: git merge origin/main
     - name: Push badges branch
-      run: git push origin badges
+      run: git push origin/badges
     - name: Install
       run: npm ci
     - name: Coverage
