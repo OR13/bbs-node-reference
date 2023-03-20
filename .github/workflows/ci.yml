@@ -12,7 +12,7 @@ jobs:
       with:
         fetch-depth: 0
     - name: Checkout badges branch
-      run: git checkout badges
+      run: git checkout origin badges
     - name: Rebase badges on develop
       run: git merge origin/develop
     - name: Push badges branch
