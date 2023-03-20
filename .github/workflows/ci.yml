@@ -14,7 +14,7 @@ jobs:
     - name: Checkout badges branch
       run: git checkout origin badges
     - name: Rebase badges on develop
-      run: git merge origin/develop
+      run: git merge origin/main
     - name: Push badges branch
       run: git push origin badges
     - name: Install
